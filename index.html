@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Switcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-[#1f1f1f] gap-[100px]">
+
+  <!-- Switcher Buttons -->
+  <div class="relative py-[30px] px-[10px] flex justify-center items-center flex-col shadow-custom bg-[#28292b] rounded-lg h-[420px] w-[120px]">
+    <div class="content-evenly ">
+      <button class="color-switch bg-[#1f1f1f] relative w-16 h-7 rounded-[20px] m-5 cursor-pointer focus:outline-none" data-color="#1dd1a1">
+        <span class="dot absolute top-[2px] left-[2px] w-6 h-6 rounded-full bg-[#1dd1a1] transition-all duration-500 ease-in-out"></span>
+      </button>
+      <button class="color-switch bg-[#1f1f1f] relative w-16 h-7 rounded-[20px] m-5 cursor-pointer focus:outline-none" data-color="#ff6b6b">
+        <span class="dot absolute top-[2px] left-[2px] w-6 h-6 rounded-full bg-[#ff6b6b] transition-all duration-500 ease-in-out"></span>
+      </button>
+      <button class="color-switch bg-[#1f1f1f] relative w-16 h-7 rounded-[20px] m-5 cursor-pointer focus:outline-none" data-color="#2e86de">
+        <span class="dot absolute top-[2px] left-[2px] w-6 h-6 rounded-full bg-[#2e86de] transition-all duration-500 ease-in-out"></span>
+      </button>
+      <button class="color-switch bg-[#1f1f1f] relative w-16 h-7 rounded-[20px] m-5 cursor-pointer focus:outline-none" data-color="#f368e0">
+        <span class="dot absolute top-[2px] left-[2px] w-6 h-6 rounded-full bg-[#f368e0] transition-all duration-500 ease-in-out"></span>
+      </button>
+      <button class="color-switch bg-[#1f1f1f] relative w-16 h-7 rounded-[20px] m-5 cursor-pointer focus:outline-none" data-color="#ff9f43">
+        <span class="dot absolute top-[2px] left-[2px] w-6 h-6 rounded-full bg-[#ff9f43] transition-all duration-500 ease-in-out"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Color Changing Box -->
+  <div class="relative w-80 h-80 bg-[#28292b] rounded-[10px] transition-colors duration-700 ease-in-outshadow-custom shadow-custom" id="box"></div>
+
+<script src="script.js"></script>
+</body>
+</html> 
